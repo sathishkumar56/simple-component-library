@@ -6,6 +6,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react-hook-form": "^7.43.9",
+    "react-responsive-carousel": "^3.2.23",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
