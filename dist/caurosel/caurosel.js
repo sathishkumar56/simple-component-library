@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-export default function Carousel1(s1, s2, s3, s4) {
+function Carousel1(s1, s2, s3, s4) {
     return React.createElement(
         "div",
         null,
@@ -39,3 +39,4 @@ export default function Carousel1(s1, s2, s3, s4) {
         )
     );
 };
+export default Carousel1;

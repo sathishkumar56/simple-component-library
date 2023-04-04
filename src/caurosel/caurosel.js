@@ -3,19 +3,19 @@ import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
-export default function Carousel1(s1,s2,s3,s4) {
+function Carousel1(s1, s2, s3, s4) {
     return (
         <div>
-        <Carousel
-          infiniteLoop={true}
-          autoPlay={true}
-          showStatus={false}
-          showArrows={true}
-          showThumbs={false}
-          interval={1500}
-        >
+            <Carousel
+                infiniteLoop={true}
+                autoPlay={true}
+                showStatus={false}
+                showArrows={true}
+                showThumbs={false}
+                interval={1500}
+            >
 
-<div >
+                <div >
                     <img src={s1} alt="image1" />
                     {/* <p className="legend">Legend 1</p> */}
                 </div>
@@ -32,7 +32,8 @@ export default function Carousel1(s1,s2,s3,s4) {
                     {/* <p className="legend">Legend 3</p> */}
                 </div>
 
-        </Carousel>
+            </Carousel>
         </div>
     );
-};
+}
+export default Carousel1;
