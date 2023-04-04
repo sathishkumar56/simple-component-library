@@ -5,4 +5,5 @@ import Carousel1 from "./caurosel/caurosel";
 import ReactDOM from "react-dom";
 
 ReactDOM.render(<div>Hello world</div>, document.getElementById("root"));
-export { Login ,Carousel1};
+export { Login };
+export { Carousel1 };
