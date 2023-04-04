@@ -38,5 +38,5 @@ function Carousel1(s1, s2, s3, s4) {
             )
         )
     );
-};
+}
 export default Carousel1;

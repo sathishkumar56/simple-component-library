@@ -9,5 +9,4 @@ ReactDOM.render(React.createElement(
   null,
   "Hello world"
 ), document.getElementById("root"));
-export { Login };
-export { Carousel1 };
+export { Login, Carousel1 };
