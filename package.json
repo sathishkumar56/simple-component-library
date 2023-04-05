@@ -1,6 +1,6 @@
 {
   "name": "simple-component-library-sat",
-  "version": "0.1.21",
+  "version": "0.1.23",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
