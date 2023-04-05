@@ -2,7 +2,8 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const Carousel1 = props => {
+function Carousel1({ images }) {
+    if (images == undefined) return;
     return React.createElement(
         "div",
         null,
@@ -16,27 +17,12 @@ const Carousel1 = props => {
                 showThumbs: false,
                 interval: 1500
             },
-            React.createElement(
+            images.map((image, index) => React.createElement(
                 "div",
-                null,
-                React.createElement("img", { src: props.s1, alt: "image1" })
-            ),
-            React.createElement(
-                "div",
-                null,
-                React.createElement("img", { src: props.s2, alt: "image2" })
-            ),
-            React.createElement(
-                "div",
-                null,
-                React.createElement("img", { src: props.s3, alt: "image3" })
-            ),
-            React.createElement(
-                "div",
-                null,
-                React.createElement("img", { src: props.s4, alt: "image4" })
-            )
+                { key: index },
+                React.createElement("img", { src: image, alt: `image${index + 1}` })
+            ))
         )
     );
-};
+}
 export default Carousel1;
