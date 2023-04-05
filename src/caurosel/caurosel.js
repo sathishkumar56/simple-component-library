@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
-const Carousel1=()=> {
+const Carousel1=(props)=> {
     return (
         <div>
             <Carousel
@@ -16,19 +16,19 @@ const Carousel1=()=> {
             >
 
                 <div >
-                    <img src={s1} alt="image1" />
+                    <img src={props.s1} alt="image1" />
                     {/* <p className="legend">Legend 1</p> */}
                 </div>
                 <div >
-                    <img src={s2} alt="image2" />
+                    <img src={props.s2} alt="image2" />
                     {/* <p className="legend">Legend 2</p> */}
                 </div>
                 <div>
-                    <img src={s3} alt="image3" />
+                    <img src={props.s3} alt="image3" />
                     {/* <p className="legend">Legend 3</p> */}
                 </div>
                 <div>
-                    <img src={s4} alt="image4" />
+                    <img src={props.s4} alt="image4" />
                     {/* <p className="legend">Legend 3</p> */}
                 </div>
 
